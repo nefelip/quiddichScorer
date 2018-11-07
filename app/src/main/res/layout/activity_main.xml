@@ -25,7 +25,7 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:textColor="@android:color/black"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:text=""
             android:textStyle="bold" />
 
@@ -36,7 +36,7 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:textColor="@android:color/black"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:text=""
             android:textStyle="bold"/>
     </LinearLayout>
@@ -54,9 +54,10 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:src="@drawable/slyth"
+                android:contentDescription="@string/slythering"
                 android:layout_marginBottom="20dp"/>
 
             <TextView
@@ -66,19 +67,19 @@
                 android:gravity="center_horizontal"
                 android:text="0"
                 android:textColor="@android:color/black"
-                android:textSize="60dp" />
+                android:textSize="60sp" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Quaffle"
+                android:text="@string/quaffle"
                 android:layout_margin="8dp"
                 android:onClick="slytherinScoresQuaffle"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Golden Snitch"
+                android:text="@string/snitch"
                 android:layout_margin="8dp"
                 android:onClick="SlytherinScoresSnitch"/>
         </LinearLayout>
@@ -96,9 +97,10 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:src="@drawable/griff"
+                android:contentDescription="@string/grifindor"
                 android:layout_marginBottom="20dp"/>
 
             <TextView
@@ -108,19 +110,19 @@
                 android:gravity="center_horizontal"
                 android:text="0"
                 android:textColor="@android:color/black"
-                android:textSize="60dp" />
+                android:textSize="60sp" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Quaffle"
+                android:text="@string/quaffle"
                 android:layout_margin="8dp"
                 android:onClick="griffindorScoresQuaffle"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Golden Snitch"
+                android:text="@string/snitch"
                 android:layout_margin="8dp"
                 android:onClick="griffindorScoresSnitch"/>
         </LinearLayout>
@@ -137,7 +139,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Reset"
+            android:text="@string/reset"
             android:onClick="resetGame"/>
     </LinearLayout>
 </RelativeLayout>
